@@ -1,0 +1,13 @@
+name: Test Reuse
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+
+jobs:
+  deploy-env:
+    name: Create environment
+    uses: ./.github/workflows/test.yml
+    with:
+      test: test
