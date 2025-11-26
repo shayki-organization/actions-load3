@@ -8,6 +8,6 @@ on:
 jobs:
   deploy-env:
     name: Create environment
-    uses: shayki-organization/actions-lens4/.github/workflows/use-2-.yml@v0.1
+    uses: shayki-organization/actions-lens4/.github/workflows/test.yml@v0.1
     with:
       test: test
